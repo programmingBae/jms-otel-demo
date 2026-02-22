@@ -17,6 +17,7 @@ docker run --rm \
   jms-otel-demo:1.0.0
 
 #consumer \ 
+
 docker run --rm \
   -e MAIN_CLASS=com.example.JmsConsumer \
   -e SOLACE_HOST=tcp://host.docker.internal:55557 \
