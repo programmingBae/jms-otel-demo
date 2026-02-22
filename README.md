@@ -1,7 +1,10 @@
 #build image ; 
 docker build -t jms-otel-demo:1.0.0 .
 
+
+
 #run publisher - pake main class
+override lg buat mastiin
 docker run --rm \
   -e MAIN_CLASS=com.example.JmsPublisher \
   -e SOLACE_HOST=tcp://host.docker.internal:55557 \
